@@ -10,7 +10,7 @@ public class Patroller : MonoBehaviour
     private int waypointIndex;
     private float dist;
 
-
+    
     void Start()
     {
         waypointIndex = 0;
@@ -40,5 +40,5 @@ public class Patroller : MonoBehaviour
             waypointIndex = 0;
         }
         transform.LookAt(waypoints[waypointIndex].position);
-    }
+    }    
 }
