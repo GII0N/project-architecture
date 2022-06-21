@@ -6,6 +6,7 @@ public class SettingsMenu : MonoBehaviour
 {
 	public GameObject CrossHair;
 	public bool Active = true;
+	public GameObject Settingsmenu;
 
 	void Update()
 	{
@@ -22,5 +23,9 @@ public class SettingsMenu : MonoBehaviour
 		{
 			Active = true;
 		}
+	}
+	public void CloseMenu()
+	{
+		Settingsmenu.SetActive(false);
 	}
 }
