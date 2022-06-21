@@ -28,4 +28,8 @@ public class SettingsMenu : MonoBehaviour
 	{
 		Settingsmenu.SetActive(false);
 	}
+	public void ToggleFullscreen(bool isFullScreen)
+	{
+		Screen.fullScreen = isFullScreen;
+	}
 }
