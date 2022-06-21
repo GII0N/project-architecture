@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+	public GameObject CrossHair;
+	public bool Active = true;
 
-    // Update is called once per frame
-    private void Update()
-    {
-        
-    }
+	void Update()
+	{
+		Crosshair();
+		CrossHair.SetActive(Active);
+	}
+   public void Crosshair()
+	{
+		if (Active == true)
+		{
+			Active = false;
+		}
+		else
+		{
+			Active = true;
+		}
+	}
 }

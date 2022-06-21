@@ -19,8 +19,8 @@ public class MainMenu: MonoBehaviour
     public void StartNewGame()
     {  
         SceneManager.LoadScene("Game");
-        //to-do: Add a popup that asks if you are sure about starting a new game & reset/delete the old savegame if you press yes
-    }
+		//to-do: Add a popup that asks if you are sure about starting a new game & reset/delete the old savegame if you press yes
+	}
 
     public void OpenOptions()
     {
