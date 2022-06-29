@@ -5,32 +5,48 @@ using TMPro;
 
 public class PickUpObject : MonoBehaviour
 {
-    public int wood;
-    public int stone;
-    public int metal;
-    public TextMeshProUGUI woodCounter;
-    public TextMeshProUGUI stoneCounter;
-    public TextMeshProUGUI metalCounter;
+    public int gear;
+    public int nut;
+    public int pipe;
+	public int bolt;
+	public int metalplate;
+	public TextMeshProUGUI gearCounter;
+    public TextMeshProUGUI nutCounter;
+    public TextMeshProUGUI pipeCounter;
+	public TextMeshProUGUI boltCounter;
+	public TextMeshProUGUI metalplateCounter;
 
-    private void OnTriggerEnter(Collider collider)
+	private void OnTriggerEnter(Collider collider)
     {
         //prevent it from being below zero when buying stuff
-        if (collider.transform.tag == "Wood")
+        if (collider.transform.tag == "Gear")
         {
-            wood++;
-            woodCounter.text = wood.ToString();
+            gear++;
+            gearCounter.text = gear.ToString();
             Destroy(collider.gameObject);
         }
-        if (collider.transform.tag == "Stone")
+        if (collider.transform.tag == "Nut")
         {
-            stone++;
-            stoneCounter.text = stone.ToString();
+            nut++;
+            nutCounter.text = nut.ToString();
             Destroy(collider.gameObject);
         }
-        if (collider.transform.tag == "Metal")
+		if (collider.transform.tag == "bolt")
+		{
+			bolt++;
+			boltCounter.text = bolt.ToString();
+			Destroy(collider.gameObject);
+		}
+		if (collider.transform.tag == "Pipe")
+		{
+			pipe++;
+			pipeCounter.text = pipe.ToString();
+			Destroy(collider.gameObject);
+		}
+		if (collider.transform.tag == "Metalplate")
         {
-            metal++;
-            metalCounter.text = metal.ToString();
+            metalplate++;
+            metalplateCounter.text = metalplate.ToString();
             Destroy(collider.gameObject);
         }
     }

@@ -62,4 +62,10 @@ public class MainMenu: MonoBehaviour
     {
         Application.Quit();
     }
+
+	public void ToggleFullscreen(bool isFullScreen)
+	{
+		Screen.fullScreen = isFullScreen;
+		
+	}
 }
