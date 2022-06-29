@@ -4471,8 +4471,8 @@ GameObject:
   - component: {fileID: 1186999993}
   - component: {fileID: 1186999992}
   - component: {fileID: 1186999994}
-  - component: {fileID: 1186999995}
   - component: {fileID: 1186999996}
+  - component: {fileID: 1186999995}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5719,6 +5719,7 @@ MonoBehaviour:
   BrigtnesSlider: {fileID: 1832781234}
   SensitivitySlider: {fileID: 536618783}
   Fullscreen: 0
+  activecrosshair: 0
 --- !u!1 &1499873914
 GameObject:
   m_ObjectHideFlags: 0

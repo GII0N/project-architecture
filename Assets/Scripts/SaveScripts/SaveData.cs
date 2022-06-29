@@ -17,24 +17,24 @@ public class SavePlayerLocation
 	}
 }
 
-public class SaveItems
-{
-	public int gear;
-	public int nut;
-	public int pipe;
-	public int bolt;
-	public int metalplate;
+// public class SaveItems
+// {
+// 	public int gear;
+// 	public int nut;
+// 	public int pipe;
+// 	public int bolt;
+// 	public int metalplate;
 
-	public SaveItems(PickUpObject pickupObject)
-	{
-		gear = pickupObject.gear;
-		nut = pickupObject.nut;
-		pipe = pickupObject.pipe;
-		bolt = pickupObject.bolt;
-		metalplate = pickupObject.metalplate;
+// 	public SaveItems(PickUpObject pickupObject)
+// 	{
+// 		gear = pickupObject.gear;
+// 		nut = pickupObject.nut;
+// 		pipe = pickupObject.pipe;
+// 		bolt = pickupObject.bolt;
+// 		metalplate = pickupObject.metalplate;
 
-	}
-}
+// 	}
+// }
 
 public class SaveSettings
 {
