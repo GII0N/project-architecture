@@ -45,6 +45,6 @@ public class MouseLook : MonoBehaviour
 	}
 	public void ChangeSensitivity()
 	{
-		mouseSensitivity = SettingBetweenScenes.MouseSensitivity.value;
+		mouseSensitivity = 1;
 	}
 }

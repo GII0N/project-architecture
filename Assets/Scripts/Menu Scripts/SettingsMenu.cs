@@ -11,6 +11,7 @@ public class SettingsMenu : MonoBehaviour
 	public Light SceneLight;
 	public Slider BrigtnesSlider;
 	public Slider SensitivitySlider;
+	public Slider audiovolume;
 	public bool Fullscreen;
 	public bool activecrosshair;
 
@@ -33,41 +34,38 @@ public class SettingsMenu : MonoBehaviour
 	public void Crosshair()
 	{
 		
-		if (SettingBetweenScenes.Active == true)
+		if (activecrosshair == true)
 		{
-			SettingBetweenScenes.Active = false;
+			activecrosshair = false;
 		}
 		else
 		{
-			SettingBetweenScenes.Active = true;
+			activecrosshair = true;
 		}
 	}
 
 	public void ToggleFullscreen()
 	{
 
-		if (SettingBetweenScenes.FullScreen == true)
+		if (Fullscreen == true)
 		{
-			SettingBetweenScenes.FullScreen = false;
+			Fullscreen = false;
 		}
 		else
 		{
-			SettingBetweenScenes.FullScreen = true;
+			Fullscreen = true;
 		}
 		
 	}
 
 	public void GetSettings()
 	{
-		SettingBetweenScenes.FullScreen = Screen.fullScreen;
-		BrigtnesSlider.value = SettingBetweenScenes.Scenelight.value;
+		Fullscreen= Screen.fullScreen;
+		
 	}
 
 	public void UpdateSettings()
 	{
-		Screen.fullScreen = SettingBetweenScenes.FullScreen;
-		CrossHair.SetActive(SettingBetweenScenes.Active);
-		SettingBetweenScenes.Scenelight.value = BrigtnesSlider.value;
-		SettingBetweenScenes.MouseSensitivity.value = SensitivitySlider.value;
+		
 	}
 }

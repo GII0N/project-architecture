@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class SavePlayerLocation
 {
 
@@ -17,6 +18,7 @@ public class SavePlayerLocation
 	}
 }
 
+<<<<<<< Updated upstream
 // public class SaveItems
 // {
 // 	public int gear;
@@ -35,14 +37,30 @@ public class SavePlayerLocation
 
 // 	}
 // }
+=======
+public class SaveItems
+{
+	public int gear;
+	public int pipe;
+	public int metalplate;
+
+	public SaveItems(PickUpObject pickupObject)
+	{
+		gear = pickupObject.gear;
+		pipe = pickupObject.pipe;
+		metalplate = pickupObject.metalplate;
+
+	}
+}
+>>>>>>> Stashed changes
 
 public class SaveSettings
 {
 	public bool crosshair;
 	public bool fullscreen;
 	public Slider brightness;
-	public Slider sensitivity;
 	public Slider audiovolume;
+	public Slider sensitivity;
 
 	public SaveSettings(SettingsMenu settingsMenu)
 	{
@@ -50,6 +68,9 @@ public class SaveSettings
 		crosshair = settingsMenu.activecrosshair;
 		fullscreen = settingsMenu.Fullscreen;
 		brightness.value = settingsMenu.BrigtnesSlider.value;
+		sensitivity = settingsMenu.SensitivitySlider;
+		audiovolume = settingsMenu.audiovolume;
 
 	}
 }
+
