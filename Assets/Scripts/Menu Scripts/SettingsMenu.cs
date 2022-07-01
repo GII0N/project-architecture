@@ -17,12 +17,12 @@ public class SettingsMenu : MonoBehaviour
 
 	public void Start()
 	{
-		GetSettings(); 
+		
 	}
 
 	void Update()
 	{
-		UpdateSettings();
+	
 	}
 
 	public void CloseMenu()
@@ -57,15 +57,9 @@ public class SettingsMenu : MonoBehaviour
 		}
 		
 	}
-
-	public void GetSettings()
+	
+	public void SaveSettingsData()
 	{
-		Fullscreen= Screen.fullScreen;
-		
-	}
-
-	public void UpdateSettings()
-	{
-		
+		SaveSystem.SaveSettings(this);
 	}
 }

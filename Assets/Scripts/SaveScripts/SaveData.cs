@@ -18,26 +18,6 @@ public class SavePlayerLocation
 	}
 }
 
-<<<<<<< Updated upstream
-// public class SaveItems
-// {
-// 	public int gear;
-// 	public int nut;
-// 	public int pipe;
-// 	public int bolt;
-// 	public int metalplate;
-
-// 	public SaveItems(PickUpObject pickupObject)
-// 	{
-// 		gear = pickupObject.gear;
-// 		nut = pickupObject.nut;
-// 		pipe = pickupObject.pipe;
-// 		bolt = pickupObject.bolt;
-// 		metalplate = pickupObject.metalplate;
-
-// 	}
-// }
-=======
 public class SaveItems
 {
 	public int gear;
@@ -46,13 +26,12 @@ public class SaveItems
 
 	public SaveItems(PickUpObject pickupObject)
 	{
-		gear = pickupObject.gear;
-		pipe = pickupObject.pipe;
-		metalplate = pickupObject.metalplate;
+		gear = pickupObject.wood;
+		pipe = pickupObject.stone;
+		metalplate = pickupObject.metal;
 
 	}
 }
->>>>>>> Stashed changes
 
 public class SaveSettings
 {

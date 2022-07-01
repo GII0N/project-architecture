@@ -8,7 +8,7 @@ public class SaveMenu : MonoBehaviour
 	public GameObject SaveGame;
 	public GameObject LoadGame;
 	public GameObject NewGame;
-
+	
 
     // Start is called before the first frame update
     void Start()
@@ -41,4 +41,11 @@ public class SaveMenu : MonoBehaviour
 	{
 		NewGame.SetActive(true);
 	}
+
+	public void SaveData()
+	{
+		//SaveSystem.SaveLocation(playerMovement);
+	}
+		
+
 }

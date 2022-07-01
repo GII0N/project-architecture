@@ -3,9 +3,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 //do not call on this class
-public class SaveSystem
+public static class SaveSystem
 {
-	public void SaveLocation(PlayerMovement playerMovement)
+	public static void SaveLocation(PlayerMovement playerMovement)
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
 		string path = Application.persistentDataPath + "/player.Location";
@@ -17,7 +17,7 @@ public class SaveSystem
 		stream.Close();
 	}
 
-	public void SavePickups(PickUpObject pickUp)
+	public static  void SavePickups(PickUpObject pickUp)
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
 		string path = Application.persistentDataPath + "/player.Pickupobjects";
@@ -29,7 +29,7 @@ public class SaveSystem
 		stream.Close();
 	}
 
-	public void SaveSettings(SettingsMenu settings)
+	public static void SaveSettings(SettingsMenu settings)
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
 		string path = Application.persistentDataPath + "/player.Settings";
@@ -41,7 +41,7 @@ public class SaveSystem
 		stream.Close();
 	}
 
-	public PickUpObject LoadLocation()
+	public static PickUpObject LoadLocation()
 	{
 		string path = Application.persistentDataPath + "/player.Pickupobjects";
 		if (File.Exists(path))
@@ -60,7 +60,7 @@ public class SaveSystem
 		}
 	}
 
-	public PlayerMovement LoadPickups()
+	public static PlayerMovement LoadPickups()
 	{
 		string path = Application.persistentDataPath + "/player.Location";
 		if (File.Exists(path))
@@ -79,7 +79,7 @@ public class SaveSystem
 		}
 	}
 
-	public SettingsMenu LoadSettings()
+	public static SettingsMenu LoadSettings()
 	{
 		string path = Application.persistentDataPath + "/player.Settings";
 		if (File.Exists(path))
