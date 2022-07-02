@@ -20,15 +20,15 @@ public class SavePlayerLocation
 
 public class SaveItems
 {
-	public int gear;
-	public int pipe;
-	public int metalplate;
+	public int wood;
+	public int stone;
+	public int metal;
 
 	public SaveItems(PickUpObject pickupObject)
 	{
-		gear = pickupObject.wood;
-		pipe = pickupObject.stone;
-		metalplate = pickupObject.metal;
+		wood = pickupObject.wood;
+		stone = pickupObject.stone;
+		metal = pickupObject.metal;
 
 	}
 }
