@@ -15,6 +15,8 @@ public class SettingsMenu : MonoBehaviour
 	public bool Fullscreen;
 	public bool activecrosshair;
 	public AudioSource MainNoise;
+	public float Sensitivity = 200f;
+
 
 	public void Start()
 	{
@@ -22,13 +24,9 @@ public class SettingsMenu : MonoBehaviour
 	}
 
 	void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			SaveSystem.SaveSettings(this);
-		}
-		
+	{	
 		ChangeAudioVolume();
+		ChangeBrigthness();
 
 	}
 
@@ -65,6 +63,16 @@ public class SettingsMenu : MonoBehaviour
 		
 	}
 
+	public void ChangeBrigthness()
+	{
+		SceneLight.intensity = BrigtnesSlider.value;
+	}
+
+	public void ChangeSensitivity()
+	{
+		Sensitivity = SensitivitySlider.value;
+	}
+
 	public void ChangeAudioVolume()
 	{
 		MainNoise.volume = audiovolumeslider.value;
@@ -78,7 +86,5 @@ public class SettingsMenu : MonoBehaviour
 	public void LoadSettingsData()
 	{
 		SaveSystem.LoadSettings();
-
-
 	}
 }
