@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class SavePlayerLocation
+public class PlayerLocationData
 {
 
 	public float[] position;
 
-	public SavePlayerLocation(PlayerMovement playerMovement)
+	public PlayerLocationData(PlayerMovement playerMovement)
 	{
 		position = new float[3];
 		position[0] = playerMovement.transform.position.x;
@@ -48,7 +48,7 @@ public class SaveSettings
 		fullscreen = settingsMenu.Fullscreen;
 		brightness.value = settingsMenu.BrigtnesSlider.value;
 		sensitivity = settingsMenu.SensitivitySlider;
-		audiovolume = settingsMenu.audiovolume;
+		audiovolume = settingsMenu.audiovolumeslider;
 
 	}
 }

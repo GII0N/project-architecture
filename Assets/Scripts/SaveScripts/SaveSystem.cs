@@ -11,7 +11,7 @@ public static class SaveSystem
 		string path = Application.persistentDataPath + "/player.Location";
 		FileStream stream = new FileStream(path, FileMode.Create);
 
-		SavePlayerLocation data = new SavePlayerLocation(playerMovement);
+		PlayerLocationData data = new PlayerLocationData(playerMovement);
 
 		formatter.Serialize(stream, data);
 		stream.Close();
@@ -41,7 +41,7 @@ public static class SaveSystem
 		stream.Close();
 	}
 
-	public static PickUpObject LoadLocation()
+	public static PickUpObject LoadPickups()
 	{
 		string path = Application.persistentDataPath + "/player.Pickupobjects";
 		if (File.Exists(path))
@@ -60,7 +60,7 @@ public static class SaveSystem
 		}
 	}
 
-	public static PlayerMovement LoadPickups()
+	public static PlayerMovement LoadLocation()
 	{
 		string path = Application.persistentDataPath + "/player.Location";
 		if (File.Exists(path))
@@ -98,3 +98,5 @@ public static class SaveSystem
 		}
 	}
 }
+
+

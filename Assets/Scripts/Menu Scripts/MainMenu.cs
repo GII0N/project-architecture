@@ -12,9 +12,10 @@ public class MainMenu: MonoBehaviour
 
     public void ContinueGame()
     {
-        //to-do: Make a save file and load that in if you press continue game
-        //to-do: Disable this button if theres no save game found
-    }
+		//to-do: Make a save file and load that in if you press continue game
+		//to-do: Disable this button if theres no save game found
+		
+	}
 
     public void StartNewGame()
     {  
@@ -67,5 +68,10 @@ public class MainMenu: MonoBehaviour
 	{
 		Screen.fullScreen = isFullScreen;
 		
+	}
+
+	public void GetSaveData()
+	{
+		//SavePlayerLocation data = SaveSystem.LoadLocation();
 	}
 }

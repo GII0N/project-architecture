@@ -11,7 +11,7 @@ public class SettingsMenu : MonoBehaviour
 	public Light SceneLight;
 	public Slider BrigtnesSlider;
 	public Slider SensitivitySlider;
-	public Slider audiovolume;
+	public Slider audiovolumeslider;
 	public bool Fullscreen;
 	public bool activecrosshair;
 
@@ -22,7 +22,10 @@ public class SettingsMenu : MonoBehaviour
 
 	void Update()
 	{
-	
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			SaveSystem.SaveSettings(this);
+		}
 	}
 
 	public void CloseMenu()
@@ -61,5 +64,12 @@ public class SettingsMenu : MonoBehaviour
 	public void SaveSettingsData()
 	{
 		SaveSystem.SaveSettings(this);
+	}
+
+	public void LoadSettingsData()
+	{
+		SaveSystem.LoadSettings();
+
+
 	}
 }
