@@ -109,36 +109,36 @@ public class Building : MonoBehaviour
              */
         }
 
-        void MainReturn()
-        {
-            /*
-             if ( woodCounter == 0 )
-            {
-             Patroller = true;
-            }
-            if ( stoneCounter == 0 )
-            {
-             Patroller = true;
-            }
-            if ( metalCounter == 0 )
-            {
-             Patroller = true;
-            }
+        // void MainReturn()
+        // {
+        //     /*
+        //      if ( woodCounter == 0 )
+        //     {
+        //      Patroller = true;
+        //     }
+        //     if ( stoneCounter == 0 )
+        //     {
+        //      Patroller = true;
+        //     }
+        //     if ( metalCounter == 0 )
+        //     {
+        //      Patroller = true;
+        //     }
 
-            if ( woodCounter >= 1 )
-            {
-             Patroller = false;
-            }
-             if ( stoneCounter >= 1 )
-            {
-             Patroller = false;
-            }
-             if ( metalCounter >= 1 )
-            {
-             Patroller = false;
-            }
-            */
-        }
+        //     if ( woodCounter >= 1 )
+        //     {
+        //      Patroller = false;
+        //     }
+        //      if ( stoneCounter >= 1 )
+        //     {
+        //      Patroller = false;
+        //     }
+        //      if ( metalCounter >= 1 )
+        //     {
+        //      Patroller = false;
+        //     }
+        //     */
+        // }
 
     }
 }

@@ -2602,7 +2602,7 @@ MonoBehaviour:
   SceneLight: {fileID: 1775513534}
   BrigtnesSlider: {fileID: 983864947}
   SensitivitySlider: {fileID: 1858452600}
-  audiovolume: {fileID: 998823744}
+  audiovolumeslider: {fileID: 0}
   Fullscreen: 0
   activecrosshair: 0
 --- !u!114 &676378954
@@ -8943,7 +8943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6078347740905959153
 Transform:
   m_ObjectHideFlags: 0
