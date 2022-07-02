@@ -14,6 +14,7 @@ public class SettingsMenu : MonoBehaviour
 	public Slider audiovolumeslider;
 	public bool Fullscreen;
 	public bool activecrosshair;
+	public AudioSource MainNoise;
 
 	public void Start()
 	{
@@ -26,6 +27,9 @@ public class SettingsMenu : MonoBehaviour
 		{
 			SaveSystem.SaveSettings(this);
 		}
+		
+		ChangeAudioVolume();
+
 	}
 
 	public void CloseMenu()
@@ -59,6 +63,11 @@ public class SettingsMenu : MonoBehaviour
 			Fullscreen = true;
 		}
 		
+	}
+
+	public void ChangeAudioVolume()
+	{
+		MainNoise.volume = audiovolumeslider.value;
 	}
 	
 	public void SaveSettingsData()

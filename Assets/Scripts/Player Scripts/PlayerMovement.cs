@@ -49,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
 		SaveSystem.SaveLocation(this);
 	}
 
+
+	// cs0029 cannot convert playermovement to player location data. Ookal heb ik het zelfde gedaan als de turorial 
+
 	// public void LoadLocationData()
 	// {
 	// 	PlayerLocationData data = SaveSystem.LoadLocation();
