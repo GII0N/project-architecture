@@ -29,8 +29,8 @@ public class SettingsMenu : MonoBehaviour
 
 	void Update()
 	{	
-		ChangeAudioVolume();
 		ChangeBrigthness();
+		ChangeAudioVolume();
 
 		CrossHair.SetActive(activecrosshair);
 	}
