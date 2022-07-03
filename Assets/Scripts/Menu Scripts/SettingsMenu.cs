@@ -19,18 +19,33 @@ public class SettingsMenu : MonoBehaviour
 	public bool activecrosshair;
 	
 	public AudioSource MainNoise;
-	
 
+	int boolToInt(bool val)
+	{
+		if (val)
+			return 1;
+		else
+			return 0;
+	}
+
+	bool intToBool(int val)
+	{
+		if (val != 0)
+			return true;
+		else
+			return false;
+	}
 
 	public void Start()
 	{
-		
+		LoadSettingsData();
 	}
 
 	void Update()
 	{	
 		ChangeBrigthness();
 		ChangeAudioVolume();
+		SaveSettingsData();
 
 		CrossHair.SetActive(activecrosshair);
 	}
@@ -66,7 +81,7 @@ public class SettingsMenu : MonoBehaviour
 		{
 			Fullscreen = true;
 		}
-		
+
 	}
 
 	public void ChangeBrigthness()
@@ -81,11 +96,17 @@ public class SettingsMenu : MonoBehaviour
 	
 	public void SaveSettingsData()
 	{
-		SaveSystem.SaveSettings(this);
+		PlayerPrefs.SetFloat("Musicvolume", AudioVolumeSlider.value);
+		PlayerPrefs.SetFloat("Brightness", BrigtnesSlider.value);
+		PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
+		PlayerPrefs.SetInt("Crosshair", boolToInt(activecrosshair));
 	}
 
 	public void LoadSettingsData()
 	{
-		SaveSystem.LoadSettings();
+		AudioVolumeSlider.value = PlayerPrefs.GetFloat("Musicvolume");
+		BrigtnesSlider.value = PlayerPrefs.GetFloat("Brightness");
+		SensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
+		activecrosshair = intToBool(PlayerPrefs.GetInt("Crosshair"));
 	}
 }
