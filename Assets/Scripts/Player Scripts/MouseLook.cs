@@ -11,6 +11,8 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
+	public SettingsMenu settingsMenu;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -29,7 +31,8 @@ public class MouseLook : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
 
-		
+
+		ChangeSensitivity();
 	}
 
 	public void Lockstate()
@@ -43,8 +46,9 @@ public class MouseLook : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
+
 	public void ChangeSensitivity()
 	{
-		
+		mouseSensitivity = settingsMenu.SensitivitySlider.value;
 	}
 }
