@@ -5749,6 +5749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 200
   playerBody: {fileID: 1186999993}
+  settingsMenu: {fileID: 0}
 --- !u!114 &1391164840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6760,11 +6761,10 @@ MonoBehaviour:
   SceneLight: {fileID: 1775513534}
   BrigtnesSlider: {fileID: 669975384}
   SensitivitySlider: {fileID: 1136554693}
-  audiovolumeslider: {fileID: 1338695918}
+  AudioVolumeSlider: {fileID: 1338695918}
   Fullscreen: 1
   activecrosshair: 1
   MainNoise: {fileID: 1257579850}
-  Sensitivity: 200
 --- !u!114 &1656139333
 MonoBehaviour:
   m_ObjectHideFlags: 0

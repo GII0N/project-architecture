@@ -215,13 +215,12 @@ MonoBehaviour:
   CrossHair: {fileID: 0}
   Settingsmenu: {fileID: 0}
   SceneLight: {fileID: 705507994}
-  BrigtnesSlider: {fileID: 0}
-  SensitivitySlider: {fileID: 0}
-  audiovolumeslider: {fileID: 0}
+  BrigtnesSlider: {fileID: 447357141}
+  SensitivitySlider: {fileID: 722176115}
+  AudioVolumeSlider: {fileID: 833035620}
   Fullscreen: 1
   activecrosshair: 0
   MainNoise: {fileID: 0}
-  Sensitivity: 200
 --- !u!1 &183951446
 GameObject:
   m_ObjectHideFlags: 0
