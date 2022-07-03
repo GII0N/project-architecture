@@ -48,7 +48,7 @@ public class SaveSettings
 		fullscreen = settingsMenu.Fullscreen;
 		brightness.value = settingsMenu.BrigtnesSlider.value;
 		sensitivity = settingsMenu.SensitivitySlider;
-		audiovolume = settingsMenu.audiovolumeslider;
+		audiovolume = settingsMenu.AudioVolumeSlider;
 
 	}
 }

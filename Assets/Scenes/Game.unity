@@ -2602,7 +2602,7 @@ MonoBehaviour:
   SceneLight: {fileID: 1775513534}
   BrigtnesSlider: {fileID: 983864947}
   SensitivitySlider: {fileID: 1858452600}
-  audiovolumeslider: {fileID: 998823744}
+  AudioVolumeSlider: {fileID: 998823744}
   Fullscreen: 1
   activecrosshair: 1
   MainNoise: {fileID: 1257579850}
@@ -5420,6 +5420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 200
   playerBody: {fileID: 1186999993}
+  settingsMenu: {fileID: 0}
 --- !u!114 &1391164840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7308,7 +7309,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 676378953}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: Crosshair
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1809443239
 GameObject:

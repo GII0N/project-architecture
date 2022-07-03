@@ -8,14 +8,18 @@ public class SettingsMenu : MonoBehaviour
 {
 	public GameObject CrossHair;
 	public GameObject Settingsmenu;
+	
 	public Light SceneLight;
+	
 	public Slider BrigtnesSlider;
 	public Slider SensitivitySlider;
-	public Slider audiovolumeslider;
+	public Slider AudioVolumeSlider;
+	
 	public bool Fullscreen;
 	public bool activecrosshair;
+	
 	public AudioSource MainNoise;
-	public float Sensitivity = 200f;
+	
 
 
 	public void Start()
@@ -28,6 +32,7 @@ public class SettingsMenu : MonoBehaviour
 		ChangeAudioVolume();
 		ChangeBrigthness();
 
+		CrossHair.SetActive(activecrosshair);
 	}
 
 	public void CloseMenu()
@@ -47,6 +52,7 @@ public class SettingsMenu : MonoBehaviour
 		{
 			activecrosshair = true;
 		}
+
 	}
 
 	public void ToggleFullscreen()
@@ -68,14 +74,9 @@ public class SettingsMenu : MonoBehaviour
 		SceneLight.intensity = BrigtnesSlider.value;
 	}
 
-	public void ChangeSensitivity()
-	{
-		Sensitivity = SensitivitySlider.value;
-	}
-
 	public void ChangeAudioVolume()
 	{
-		MainNoise.volume = audiovolumeslider.value;
+		MainNoise.volume = AudioVolumeSlider.value;
 	}
 	
 	public void SaveSettingsData()
