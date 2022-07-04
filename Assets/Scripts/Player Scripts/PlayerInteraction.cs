@@ -8,6 +8,7 @@ public class PlayerInteraction : MonoBehaviour
     private bool triggering;
 
     public GameObject npcText;
+    public GameObject npcMenu;
 
     private void Update()
     {
@@ -17,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Interacting with NPC");// Make a menu for the NPC where you can buy buildings and make a way to prevent the counts of materials to go below 0 in the item pickup script.
+                npcMenu.SetActive(true);
                 triggering = false;
             }
         }
