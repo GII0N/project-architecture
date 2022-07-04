@@ -33,7 +33,11 @@ public class PauseMenu : MonoBehaviour
 			}
 		}
 
-		UpdateProgress();
+		if(Time.timeScale == 1f)
+		{
+			UpdateProgress();
+		}
+		
 
 	}
 	public void Resume()

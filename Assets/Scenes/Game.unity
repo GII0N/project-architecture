@@ -429,6 +429,7 @@ MonoBehaviour:
   SaveGame: {fileID: 1287024509}
   LoadGame: {fileID: 1574447405}
   NewGame: {fileID: 163826221}
+  playerlocation: {fileID: 0}
 --- !u!114 &21990299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4118,7 +4119,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &945248907
 GameObject:
   m_ObjectHideFlags: 0
