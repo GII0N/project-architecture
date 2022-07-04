@@ -13,11 +13,13 @@ public class PauseMenu : MonoBehaviour
 	public GameObject SaveMenu;
 	public float progress = 0;
 	public Slider ProgressSlider;
-
+	public SettingsMenu settings;
 
 	private void Start()
 	{
 		Time.timeScale = 1f;
+
+		settings.LoadSettingsData();
 	}
 	void Update()
 	{
@@ -32,13 +34,9 @@ public class PauseMenu : MonoBehaviour
 				Pause();
 			}
 		}
-
-		if(Time.timeScale == 1f)
-		{
-			UpdateProgress();
-		}
+	
+		UpdateProgress();
 		
-
 	}
 	public void Resume()
 	{
