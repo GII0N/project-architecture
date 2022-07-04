@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+	public GameObject player;
+	public float x;
+	public float y;
+	public float z;
+	
+	public CharacterController controller;
 
     public float speed = 12f;
     public float gravity = -9.81f;
@@ -53,22 +58,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+	public void LoadLocationData()
+	{
+		x = PlayerPrefs.GetFloat("x");
+		y = PlayerPrefs.GetFloat("y");
+		z = PlayerPrefs.GetFloat("z");
+		Vector3 posVec = new Vector3(x, y, z);
+		player.transform.position = posVec;
+	}
+
 	public void SaveLocationData()
 	{
-		//SaveSystem.SaveLocation(this);
-		//PlayerPrefs.SetFloat[3]
+		PlayerPrefs.SetFloat("x", x);
+		PlayerPrefs.SetFloat("y", y);
+		PlayerPrefs.SetFloat("z", z);
+
 	}
 
 
-	// cs0029 cannot convert playermovement to player location data. Ookal heb ik het zelfde gedaan als de turorial 
-
-	// public void LoadLocationData()
-	// {
-	// 	PlayerLocationData data = SaveSystem.LoadLocation();
-
-	// 	Vector3 position;
-	// 	position.x = data.position[0];
-	// 	position.y = data.position[1];
-	// 	position.z = data.position[2];
-	// }
 }
