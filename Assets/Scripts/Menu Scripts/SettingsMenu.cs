@@ -62,11 +62,11 @@ public class SettingsMenu : MonoBehaviour
 		
 		if (activecrosshair == true)
 		{
-			activecrosshair = false;
+			activecrosshair = true; 
 		}
 		else
 		{
-			activecrosshair = true;
+			activecrosshair = false;
 		}
 
 	}

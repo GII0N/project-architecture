@@ -9029,6 +9029,7 @@ MonoBehaviour:
   SaveMenu: {fileID: 1409748367}
   progress: 0
   ProgressSlider: {fileID: 1649264560}
+  settings: {fileID: 1656139332}
 --- !u!114 &1957649402
 MonoBehaviour:
   m_ObjectHideFlags: 0
