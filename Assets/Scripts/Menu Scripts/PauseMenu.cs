@@ -19,7 +19,7 @@ public class PauseMenu : MonoBehaviour
 	{
 		Time.timeScale = 1f;
 
-		settings.LoadSettingsData();
+		settings.LoadSettingsData();	
 	}
 	void Update()
 	{
