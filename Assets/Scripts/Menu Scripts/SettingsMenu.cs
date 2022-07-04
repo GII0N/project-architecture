@@ -100,6 +100,7 @@ public class SettingsMenu : MonoBehaviour
 		PlayerPrefs.SetFloat("Brightness", BrigtnesSlider.value);
 		PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
 		PlayerPrefs.SetInt("Crosshair", boolToInt(activecrosshair));
+
 	}
 
 	public void LoadSettingsData()
@@ -108,5 +109,6 @@ public class SettingsMenu : MonoBehaviour
 		BrigtnesSlider.value = PlayerPrefs.GetFloat("Brightness");
 		SensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
 		activecrosshair = intToBool(PlayerPrefs.GetInt("Crosshair"));
+		CrossHair.SetActive(activecrosshair);
 	}
 }

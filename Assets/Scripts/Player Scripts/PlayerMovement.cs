@@ -46,7 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
 	public void SaveLocationData()
 	{
-		SaveSystem.SaveLocation(this);
+		//SaveSystem.SaveLocation(this);
+		//PlayerPrefs.SetFloat[3]
 	}
 
 
