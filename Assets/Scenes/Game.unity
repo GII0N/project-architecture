@@ -5074,6 +5074,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c51184134367747a4ba9ed1efcdfc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1186999991}
+  x: 0
+  y: 0
+  z: 0
   controller: {fileID: 1186999992}
   speed: 12
   gravity: -19.62

@@ -10,16 +10,21 @@ public class MainMenu: MonoBehaviour
     public GameObject Options;
     public GameObject Credits;
 
+	public SettingsMenu Settings;
+	public PlayerMovement PlayerLocation;
+
     public void ContinueGame()
     {
 		//to-do: Make a save file and load that in if you press continue game
 		//to-do: Disable this button if theres no save game found
-		
+		Settings.LoadSettingsData();
+		PlayerLocation.LoadLocationData();
 	}
 
     public void StartNewGame()
     {  
         SceneManager.LoadScene("Game");
+		Settings.LoadSettingsData();
 		//to-do: Add a popup that asks if you are sure about starting a new game & reset/delete the old savegame if you press yes
 	}
 
@@ -70,8 +75,4 @@ public class MainMenu: MonoBehaviour
 		
 	}
 
-	public void GetSaveData()
-	{
-		//SavePlayerLocation data = SaveSystem.LoadLocation();
-	}
 }

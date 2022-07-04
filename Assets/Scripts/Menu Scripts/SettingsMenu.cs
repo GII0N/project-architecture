@@ -53,6 +53,7 @@ public class SettingsMenu : MonoBehaviour
 	public void CloseMenu()
 	{
 		Settingsmenu.SetActive(false);
+		SaveSettingsData();
 
 	}
 
@@ -86,6 +87,11 @@ public class SettingsMenu : MonoBehaviour
 
 	public void ChangeBrigthness()
 	{
+		if (!BrigtnesSlider) 
+		{
+			SceneLight.intensity = 1f;
+		}
+		else
 		SceneLight.intensity = BrigtnesSlider.value;
 	}
 
@@ -100,7 +106,7 @@ public class SettingsMenu : MonoBehaviour
 		PlayerPrefs.SetFloat("Brightness", BrigtnesSlider.value);
 		PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
 		PlayerPrefs.SetInt("Crosshair", boolToInt(activecrosshair));
-
+		PlayerPrefs.SetInt("Fullscreen", boolToInt(Fullscreen));
 	}
 
 	public void LoadSettingsData()
@@ -109,6 +115,8 @@ public class SettingsMenu : MonoBehaviour
 		BrigtnesSlider.value = PlayerPrefs.GetFloat("Brightness");
 		SensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
 		activecrosshair = intToBool(PlayerPrefs.GetInt("Crosshair"));
+		Fullscreen = intToBool(PlayerPrefs.GetInt("Fullscreen"));
+		
 		CrossHair.SetActive(activecrosshair);
 	}
 }
