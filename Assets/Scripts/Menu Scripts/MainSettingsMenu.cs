@@ -45,6 +45,7 @@ public class MainSettingsMenu : MonoBehaviour
 		{
 			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
 		}
+		SaveSettingsData();
 	}
 
     // Update is called once per frame

@@ -16,7 +16,7 @@ public class SettingsMenu : MonoBehaviour
 	
 	public bool Fullscreen;
 	public bool activecrosshair;
-	
+
 
 	public Toggle CrosshairActive;
 	public Toggle FullscreenActive;
@@ -41,11 +41,7 @@ public class SettingsMenu : MonoBehaviour
 	{
 		LoadSettingsData();
 		ChangeBrigthness();
-	}
-	public void Start()
-	{
-		ChangeBrigthness();
-		LoadSettingsData();
+		SaveSettingsData();
 	}
 
 	void Update()
@@ -145,4 +141,6 @@ public class SettingsMenu : MonoBehaviour
 		
 		CrossHair.SetActive(activecrosshair);
 	}
+
+
 }
