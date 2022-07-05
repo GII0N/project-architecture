@@ -62,6 +62,7 @@ public class PickUpObject : MonoBehaviour
     public GameObject WinScreen;
     public GameObject InGameHud;
     public GameObject NPCMenu;
+    public GameObject TimeLeftBar;
     public Button Button1;
     public Button Button2;
     public Button Button3;
@@ -673,5 +674,6 @@ public class PickUpObject : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
 		InGameHud.SetActive(true);
+        Destroy(TimeLeftBar);
     }
 }

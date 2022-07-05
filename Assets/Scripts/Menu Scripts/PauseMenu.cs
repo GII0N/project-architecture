@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
 	public GameObject SaveButton;
 	public GameObject QuitButton;
 	public GameObject GameOverScreen;
+	public GameObject WinScreen;
 	public float progress = 0;
 	public Slider ProgressSlider;
 	public SettingsMenu settings;
@@ -28,6 +29,10 @@ public class PauseMenu : MonoBehaviour
 	}
 	void Update()
 	{
+		if (WinScreen.active)
+		{
+			Destroy(GameOverScreen);
+		}
 		if (progress <= 0f)
 		{
 			GameOverScreen.SetActive(true);
