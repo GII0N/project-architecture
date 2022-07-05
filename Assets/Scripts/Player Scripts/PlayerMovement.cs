@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Awake()
 	{
-		DontDestroyOnLoad(this);
+		
 	}
 
 	// Update is called once per frame
