@@ -31,6 +31,27 @@ public class PickUpObject : MonoBehaviour
     public GameObject Building19;
     public GameObject Building20;
     public GameObject Building21;
+    public GameObject Ruin1;
+    public GameObject Ruin2;
+    public GameObject Ruin3;
+    public GameObject Ruin4;
+    public GameObject Ruin5;
+    public GameObject Ruin6;
+    public GameObject Ruin7;
+    public GameObject Ruin8;
+    public GameObject Ruin9;
+    public GameObject Ruin10;
+    public GameObject Ruin11;
+    public GameObject Ruin12;
+    public GameObject Ruin13;
+    public GameObject Ruin14;
+    public GameObject Ruin15;
+    public GameObject Ruin16;
+    public GameObject Ruin17;
+    public GameObject Ruin18;
+    public GameObject Ruin19;
+    public GameObject Ruin20;
+    public GameObject Ruin21;
 
     public TextMeshProUGUI woodCounter;
     public TextMeshProUGUI woodCounter1;
@@ -76,6 +97,8 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building1.SetActive(true);
+            Ruin1.SetActive(false);
+
         }
         else
         {
@@ -95,6 +118,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building2.SetActive(true);
+            Ruin2.SetActive(false);
         }
 
         else
@@ -115,6 +139,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building3.SetActive(true);
+            Ruin3.SetActive(false);
         }
 
         else
@@ -135,6 +160,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building4.SetActive(true);
+            Ruin4.SetActive(false);
         }
 
         else
@@ -155,6 +181,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building5.SetActive(true);
+            Ruin5.SetActive(false);
         }
 
         else
@@ -175,6 +202,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Building6.SetActive(true);
+            Ruin6.SetActive(false);
         }
 
         else
@@ -195,6 +223,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building7.SetActive(true);
+            Ruin7.SetActive(false);
         }
 
         else
@@ -215,6 +244,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building8.SetActive(true);
+            Ruin8.SetActive(false);
         }
 
         else
@@ -235,6 +265,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building9.SetActive(true);
+            Ruin9.SetActive(false);
         }
 
         else
@@ -255,6 +286,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building10.SetActive(true);
+            Ruin10.SetActive(false);
         }
 
         else
@@ -275,6 +307,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building11.SetActive(true);
+            Ruin11.SetActive(false);
         }
 
         else
@@ -295,6 +328,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building12.SetActive(true);
+            Ruin12.SetActive(false);
         }
 
         else
@@ -315,6 +349,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building13.SetActive(true);
+            Ruin13.SetActive(false);
         }
 
         else
@@ -335,6 +370,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building14.SetActive(true);
+            Ruin14.SetActive(false);
         }
 
         else
@@ -355,6 +391,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building15.SetActive(true);
+            Ruin15.SetActive(false);
         }
 
         else
@@ -375,6 +412,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building16.SetActive(true);
+            Ruin16.SetActive(false);
         }
 
         else
@@ -395,6 +433,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building17.SetActive(true);
+            Ruin17.SetActive(false);
         }
 
         else
@@ -415,6 +454,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building18.SetActive(true);
+            Ruin18.SetActive(false);
         }
 
         else
@@ -435,6 +475,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building19.SetActive(true);
+            Ruin19.SetActive(false);
         }
 
         else
@@ -455,6 +496,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building20.SetActive(true);
+            Ruin20.SetActive(false);
         }
 
         else
@@ -475,6 +517,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building21.SetActive(true);
+            Ruin21.SetActive(false);
         }
 
         else
