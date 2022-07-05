@@ -60,10 +60,11 @@ public class PickUpObject : MonoBehaviour
             wood -= 2;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
+            Building1.SetActive(true);
         }
         else
         {
-            notEnoughError.SetActive(true);
+            NotEnoughError.SetActive(true);
         }
     }
 }

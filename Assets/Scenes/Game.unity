@@ -11790,7 +11790,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &943803969
 GameObject:
   m_ObjectHideFlags: 0
@@ -16155,8 +16155,12 @@ MonoBehaviour:
   stone: 0
   metal: 0
   woodCounter: {fileID: 1859663277}
+  woodCounter1: {fileID: 1940794920}
   stoneCounter: {fileID: 887767833}
+  stoneCounter1: {fileID: 2054398211}
   metalCounter: {fileID: 982852397}
+  metalCounter1: {fileID: 1162617686}
+  notEnoughError: {fileID: 1403537357}
 --- !u!114 &1186999996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23675,8 +23679,6 @@ MonoBehaviour:
   Fullscreen: 1
   activecrosshair: 1
   MainNoise: {fileID: 1257579850}
-  CrosshairActive: {fileID: 0}
-  FullscreenActive: {fileID: 0}
 --- !u!114 &1656139333
 MonoBehaviour:
   m_ObjectHideFlags: 0
