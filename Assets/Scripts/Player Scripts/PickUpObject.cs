@@ -86,9 +86,9 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
     public void BuyItem2()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 2 && stone >= 1)
         {
-            wood -= 1;
+            wood -= 2;
             stone -= 1;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
@@ -106,10 +106,10 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem3()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 2 && stone >= 2)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 2;
+            stone -= 2;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
             stoneCounter.text = stone.ToString();
@@ -126,10 +126,10 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem4()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 3 && stone >= 2)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 3;
+            stone -= 2;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
             stoneCounter.text = stone.ToString();
@@ -146,10 +146,10 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------\
         public void BuyItem5()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 3 && stone >= 3)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 3;
+            stone -= 3;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
             stoneCounter.text = stone.ToString();
@@ -166,10 +166,10 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem6()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 4 && stone >= 3)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 4;
+            stone -= 3;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
             stoneCounter.text = stone.ToString();
@@ -186,14 +186,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem7()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 4 && metal >= 1)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 4;
+            metal -= 1;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building7.SetActive(true);
         }
 
@@ -206,14 +206,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem8()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 5 && metal >= 1)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 5;
+            metal -= 1;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building8.SetActive(true);
         }
 
@@ -226,14 +226,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem9()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 5 && metal >= 2)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 5;
+            metal -= 2;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building9.SetActive(true);
         }
 
@@ -246,14 +246,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem10()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 6 && metal >= 2)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 6;
+            metal -= 2;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building10.SetActive(true);
         }
 
@@ -266,14 +266,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem11()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 6 && metal >= 3)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 6;
+            metal -= 3;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building11.SetActive(true);
         }
 
@@ -286,14 +286,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem12()
     {
-        if (wood >= 1 && stone >= 1)
+        if (wood >= 7 && metal >= 3)
         {
-            wood -= 1;
-            stone -= 1;
+            wood -= 7;
+            metal -= 3;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
-            stoneCounter.text = stone.ToString();
-            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building12.SetActive(true);
         }
 
@@ -306,14 +306,14 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem13()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 4 && metal >= 4)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 4;
+            metal -= 4;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
             Building13.SetActive(true);
         }
 
@@ -326,15 +326,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem14()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 5 && metal >= 4)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 5;
+            metal -= 4;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building14.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -346,15 +346,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem15()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 5 && metal >= 5)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 5;
+            metal -= 5;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building15.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -366,15 +366,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem16()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 6 && metal >= 5)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 6;
+            metal -= 5;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building16.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -386,15 +386,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem17()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 6 && metal >= 6)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 6;
+            metal -= 6;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building17.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -406,15 +406,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem18()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 7 && metal >= 6)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 7;
+            metal -= 6;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building18.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -426,15 +426,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem19()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 7 && metal >= 7)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 7;
+            metal -= 7;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building19.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -446,15 +446,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem20()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 8 && metal >= 7)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 8;
+            metal -= 7;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building20.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
@@ -466,15 +466,15 @@ public class PickUpObject : MonoBehaviour
     //----------------------------------------------------------------------------------------------------------------------
         public void BuyItem21()
     {
-        if (wood >= 1 && stone >= 1)
+        if (stone >= 8 && metal >= 8)
         {
-            wood -= 1;
-            stone -= 1;
-            woodCounter.text = wood.ToString();
-            woodCounter1.text = wood.ToString();
+            stone -= 8;
+            metal -= 8;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
-            Building21.SetActive(true);
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building13.SetActive(true);
         }
 
         else
