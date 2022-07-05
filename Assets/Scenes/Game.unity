@@ -2627,6 +2627,81 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.192174, y: 0.3855104, z: 0.7131386}
   m_Center: {x: -0.0027832985, y: 0.024104223, z: -0.011654854}
+--- !u!1 &156214267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156214270}
+  - component: {fileID: 156214269}
+  - component: {fileID: 156214268}
+  m_Layer: 5
+  m_Name: GameOverScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &156214268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156214267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &156214269
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156214267}
+  m_CullTransparentMesh: 1
+--- !u!224 &156214270
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156214267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1957649405}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &175179284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8521,7 +8596,7 @@ RectTransform:
   - {fileID: 2050575818}
   - {fileID: 214567595}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9412,7 +9487,7 @@ RectTransform:
   - {fileID: 2042403042}
   - {fileID: 877894946}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12535,9 +12610,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 9999
+  m_MaxValue: 999
   m_WholeNumbers: 0
-  m_Value: 9999
+  m_Value: 999
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13141,7 +13216,7 @@ RectTransform:
   - {fileID: 1801508003}
   - {fileID: 571261688}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15322,7 +15397,7 @@ RectTransform:
   - {fileID: 1509993}
   - {fileID: 1556622456}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20746,7 +20821,7 @@ RectTransform:
   - {fileID: 1004839333}
   - {fileID: 207437025}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23869,7 +23944,7 @@ RectTransform:
   m_Children:
   - {fileID: 292913193}
   m_Father: {fileID: 1957649405}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29012,7 +29087,8 @@ MonoBehaviour:
   OptionsButton: {fileID: 111183611}
   SaveButton: {fileID: 2042403041}
   QuitButton: {fileID: 877894945}
-  progress: 9999
+  GameOverScreen: {fileID: 156214267}
+  progress: 999
   ProgressSlider: {fileID: 941511341}
   settings: {fileID: 1656139332}
 --- !u!114 &1957649402
@@ -29088,6 +29164,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1228231727}
+  - {fileID: 156214270}
   - {fileID: 628371827}
   - {fileID: 976499667}
   - {fileID: 696479006}

@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
 	public GameObject OptionsButton;
 	public GameObject SaveButton;
 	public GameObject QuitButton;
+	public GameObject GameOverScreen;
 	public float progress = 0;
 	public Slider ProgressSlider;
 	public SettingsMenu settings;
@@ -27,6 +28,13 @@ public class PauseMenu : MonoBehaviour
 	}
 	void Update()
 	{
+		if (progress <= 0f)
+		{
+			GameOverScreen.SetActive(true);
+			Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+			InGameHud.SetActive(false);
+		}
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (Time.timeScale == 0f)
