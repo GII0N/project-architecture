@@ -13,12 +13,16 @@ public class MainMenu: MonoBehaviour
 	public SettingsMenu Settings;
 	public PlayerMovement PlayerLocation;
 
+	private Scene Game;
+
     public void ContinueGame()
     {
 		//to-do: Make a save file and load that in if you press continue game
 		//to-do: Disable this button if theres no save game found
-		Settings.LoadSettingsData();
-		PlayerLocation.LoadLocationData();
+		//Settings.LoadSettingsData();
+		//PlayerLocation.LoadLocationData();
+		Game = GameObject.Find("Options").GetComponent<Scene>();
+		//Game.LoadSettingsData();
 	}
 
     public void StartNewGame()

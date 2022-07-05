@@ -50,6 +50,7 @@ public class SaveMenu : MonoBehaviour
 		
 	public void Loadgame()
 	{
+
 		playerlocation.LoadLocationData();
 	}
 }
