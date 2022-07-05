@@ -9,9 +9,7 @@ public class SettingsMenu : MonoBehaviour
 	public GameObject CrossHair;
 	public GameObject Settingsmenu;
 	
-	public Light SceneLight;
-	
-	public Slider BrigtnesSlider;
+
 	public Slider SensitivitySlider;
 	
 	public bool Fullscreen;
@@ -40,13 +38,22 @@ public class SettingsMenu : MonoBehaviour
 	void Awake()
 	{
 		LoadSettingsData();
-		ChangeBrigthness();
+
 		SaveSettingsData();
+
+		if (Fullscreen == false)
+		{
+			Screen.fullScreenMode = FullScreenMode.Windowed;
+		}
+		else
+		{
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+		}
 	}
 
 	void Update()
 	{	
-		ChangeBrigthness();
+
 		SaveSettingsData();
 
 		CrossHair.SetActive(activecrosshair);
@@ -106,20 +113,9 @@ public class SettingsMenu : MonoBehaviour
 
 	}
 
-	public void ChangeBrigthness()
-	{
-		if (!BrigtnesSlider) 
-		{
-			SceneLight.intensity = 1f;
-		}
-		else
-		SceneLight.intensity = BrigtnesSlider.value;
-	}
-
 	
 	public void SaveSettingsData()
 	{
-		PlayerPrefs.SetFloat("Brightness", BrigtnesSlider.value);
 		PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
 		PlayerPrefs.SetInt("Crosshair", boolToInt(activecrosshair));
 		PlayerPrefs.SetInt("Fullscreen", boolToInt(Fullscreen));
@@ -131,7 +127,6 @@ public class SettingsMenu : MonoBehaviour
 
 	public void LoadSettingsData()
 	{
-		BrigtnesSlider.value = PlayerPrefs.GetFloat("Brightness");
 		SensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
 		activecrosshair = intToBool(PlayerPrefs.GetInt("Crosshair"));
 		Fullscreen = intToBool(PlayerPrefs.GetInt("Fullscreen"));
