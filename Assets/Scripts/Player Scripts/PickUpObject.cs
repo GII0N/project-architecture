@@ -55,6 +55,9 @@ public class PickUpObject : MonoBehaviour
     public GameObject Ruin19;
     public GameObject Ruin20;
     public GameObject Ruin21;
+    public GameObject Ruin22;
+    public GameObject Ruin23;
+    public GameObject Ruin24;
 
     public TextMeshProUGUI woodCounter;
     public TextMeshProUGUI woodCounter1;
@@ -541,7 +544,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building22.SetActive(true);
-            Ruin21.SetActive(false);
+            Ruin22.SetActive(false);
         }
 
         else
@@ -562,7 +565,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building23.SetActive(true);
-            Ruin21.SetActive(false);
+            Ruin23.SetActive(false);
         }
 
         else
@@ -583,7 +586,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building24.SetActive(true);
-            Ruin21.SetActive(false);
+            Ruin24.SetActive(false);
         }
 
         else
