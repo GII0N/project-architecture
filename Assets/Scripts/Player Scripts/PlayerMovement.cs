@@ -22,11 +22,6 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-	void Awake()
-	{
-		
-	}
-
 	// Update is called once per frame
 	private void Update()
     {
@@ -77,8 +72,5 @@ public class PlayerMovement : MonoBehaviour
 		PlayerPrefs.SetFloat("x", x);
 		PlayerPrefs.SetFloat("y", y);
 		PlayerPrefs.SetFloat("z", z);
-
 	}
-
-
 }
