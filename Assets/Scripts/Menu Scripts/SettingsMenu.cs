@@ -20,6 +20,9 @@ public class SettingsMenu : MonoBehaviour
 	
 	public AudioSource MainNoise;
 
+	public Toggle CrosshairActive;
+	public Toggle FullscreenActive;
+
 	int boolToInt(bool val)
 	{
 		if (val)
@@ -38,6 +41,8 @@ public class SettingsMenu : MonoBehaviour
 
 	public void Start()
 	{
+		ChangeAudioVolume();
+		ChangeBrigthness();
 		LoadSettingsData();
 	}
 
@@ -62,11 +67,11 @@ public class SettingsMenu : MonoBehaviour
 		
 		if (activecrosshair == true)
 		{
-			activecrosshair = true; 
+			activecrosshair = false;
 		}
 		else
 		{
-			activecrosshair = false;
+			activecrosshair = true;
 		}
 
 	}
@@ -107,6 +112,10 @@ public class SettingsMenu : MonoBehaviour
 		PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
 		PlayerPrefs.SetInt("Crosshair", boolToInt(activecrosshair));
 		PlayerPrefs.SetInt("Fullscreen", boolToInt(Fullscreen));
+
+		CrosshairActive.isOn = activecrosshair;
+		FullscreenActive.isOn = Fullscreen;
+
 	}
 
 	public void LoadSettingsData()
@@ -116,6 +125,9 @@ public class SettingsMenu : MonoBehaviour
 		SensitivitySlider.value = PlayerPrefs.GetFloat("Sensitivity");
 		activecrosshair = intToBool(PlayerPrefs.GetInt("Crosshair"));
 		Fullscreen = intToBool(PlayerPrefs.GetInt("Fullscreen"));
+
+		CrosshairActive.isOn = activecrosshair;
+		FullscreenActive.isOn = Fullscreen;
 		
 		CrossHair.SetActive(activecrosshair);
 	}
