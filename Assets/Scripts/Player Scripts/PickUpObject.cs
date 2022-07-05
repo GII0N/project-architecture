@@ -31,6 +31,9 @@ public class PickUpObject : MonoBehaviour
     public GameObject Building19;
     public GameObject Building20;
     public GameObject Building21;
+    public GameObject Building22;
+    public GameObject Building23;
+    public GameObject Building24;
     public GameObject Ruin1;
     public GameObject Ruin2;
     public GameObject Ruin3;
@@ -529,15 +532,15 @@ public class PickUpObject : MonoBehaviour
         //----------------------------------------------------------------------------------------------------------------------
     public void BuyItem22()
     {
-        if (stone >= 8 && metal >= 8)
+        if (stone >= 9 && metal >= 8)
         {
-            stone -= 8;
+            stone -= 9;
             metal -= 8;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
-            Building21.SetActive(true);
+            Building22.SetActive(true);
             Ruin21.SetActive(false);
         }
 
@@ -550,15 +553,15 @@ public class PickUpObject : MonoBehaviour
         //----------------------------------------------------------------------------------------------------------------------
     public void BuyItem23()
     {
-        if (stone >= 8 && metal >= 8)
+        if (stone >= 9 && metal >= 9)
         {
-            stone -= 8;
-            metal -= 8;
+            stone -= 9;
+            metal -= 9;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
-            Building21.SetActive(true);
+            Building23.SetActive(true);
             Ruin21.SetActive(false);
         }
 
@@ -571,15 +574,15 @@ public class PickUpObject : MonoBehaviour
         //----------------------------------------------------------------------------------------------------------------------
     public void BuyItem24()
     {
-        if (stone >= 8 && metal >= 8)
+        if (stone >= 9 && metal >= 9)
         {
-            stone -= 8;
-            metal -= 8;
+            stone -= 9;
+            metal -= 9;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
-            Building21.SetActive(true);
+            Building24.SetActive(true);
             Ruin21.SetActive(false);
         }
 
