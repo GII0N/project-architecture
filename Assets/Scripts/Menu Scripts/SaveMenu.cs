@@ -5,9 +5,7 @@ using UnityEngine;
 public class SaveMenu : MonoBehaviour
 {
 	public GameObject Savemenu;
-	public GameObject SaveGame;
-	public GameObject LoadGame;
-	public GameObject NewGame;
+
 	public PlayerMovement playerlocation;
 	
 
@@ -28,19 +26,9 @@ public class SaveMenu : MonoBehaviour
 		Savemenu.SetActive(false);
 	}
 
-	public void OpenSave()
+	public void NewGame()
 	{
-		SaveGame.SetActive(true);
-	}
 
-	public void OpenLoad()
-	{
-		LoadGame.SetActive(true);
-	}
-
-	public void OpenNewGame()
-	{
-		NewGame.SetActive(true);
 	}
 
 	public void Savegame()
