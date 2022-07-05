@@ -128,7 +128,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem3()
+    public void BuyItem3()
     {
         if (wood >= 2 && stone >= 2)
         {
@@ -149,7 +149,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem4()
+    public void BuyItem4()
     {
         if (wood >= 3 && stone >= 2)
         {
@@ -170,7 +170,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------\
-        public void BuyItem5()
+    public void BuyItem5()
     {
         if (wood >= 3 && stone >= 3)
         {
@@ -191,7 +191,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem6()
+    public void BuyItem6()
     {
         if (wood >= 4 && stone >= 3)
         {
@@ -212,7 +212,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem7()
+    public void BuyItem7()
     {
         if (wood >= 4 && metal >= 1)
         {
@@ -233,7 +233,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem8()
+    public void BuyItem8()
     {
         if (wood >= 5 && metal >= 1)
         {
@@ -254,7 +254,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem9()
+    public void BuyItem9()
     {
         if (wood >= 5 && metal >= 2)
         {
@@ -275,7 +275,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem10()
+    public void BuyItem10()
     {
         if (wood >= 6 && metal >= 2)
         {
@@ -296,7 +296,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem11()
+    public void BuyItem11()
     {
         if (wood >= 6 && metal >= 3)
         {
@@ -317,7 +317,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem12()
+    public void BuyItem12()
     {
         if (wood >= 7 && metal >= 3)
         {
@@ -338,7 +338,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem13()
+    public void BuyItem13()
     {
         if (stone >= 4 && metal >= 4)
         {
@@ -359,7 +359,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem14()
+    public void BuyItem14()
     {
         if (stone >= 5 && metal >= 4)
         {
@@ -380,7 +380,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem15()
+    public void BuyItem15()
     {
         if (stone >= 5 && metal >= 5)
         {
@@ -401,7 +401,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem16()
+    public void BuyItem16()
     {
         if (stone >= 6 && metal >= 5)
         {
@@ -422,7 +422,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem17()
+    public void BuyItem17()
     {
         if (stone >= 6 && metal >= 6)
         {
@@ -443,7 +443,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem18()
+    public void BuyItem18()
     {
         if (stone >= 7 && metal >= 6)
         {
@@ -464,7 +464,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem19()
+    public void BuyItem19()
     {
         if (stone >= 7 && metal >= 7)
         {
@@ -485,7 +485,7 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem20()
+    public void BuyItem20()
     {
         if (stone >= 8 && metal >= 7)
         {
@@ -506,7 +506,70 @@ public class PickUpObject : MonoBehaviour
         }
     }
     //----------------------------------------------------------------------------------------------------------------------
-        public void BuyItem21()
+    public void BuyItem21()
+    {
+        if (stone >= 8 && metal >= 8)
+        {
+            stone -= 8;
+            metal -= 8;
+            stoneCounter.text = stone.ToString();
+            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building21.SetActive(true);
+            Ruin21.SetActive(false);
+        }
+
+        else
+        {
+            NotEnoughError.SetActive(true);
+            //StartCoroutine(Wait(2));
+        }
+    }
+        //----------------------------------------------------------------------------------------------------------------------
+    public void BuyItem22()
+    {
+        if (stone >= 8 && metal >= 8)
+        {
+            stone -= 8;
+            metal -= 8;
+            stoneCounter.text = stone.ToString();
+            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building21.SetActive(true);
+            Ruin21.SetActive(false);
+        }
+
+        else
+        {
+            NotEnoughError.SetActive(true);
+            //StartCoroutine(Wait(2));
+        }
+    }
+        //----------------------------------------------------------------------------------------------------------------------
+    public void BuyItem23()
+    {
+        if (stone >= 8 && metal >= 8)
+        {
+            stone -= 8;
+            metal -= 8;
+            stoneCounter.text = stone.ToString();
+            stoneCounter1.text = stone.ToString();
+            metalCounter.text = metal.ToString();
+            metalCounter1.text = metal.ToString();
+            Building21.SetActive(true);
+            Ruin21.SetActive(false);
+        }
+
+        else
+        {
+            NotEnoughError.SetActive(true);
+            //StartCoroutine(Wait(2));
+        }
+    }
+        //----------------------------------------------------------------------------------------------------------------------
+    public void BuyItem24()
     {
         if (stone >= 8 && metal >= 8)
         {
