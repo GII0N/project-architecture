@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PickUpObject : MonoBehaviour
@@ -57,6 +58,30 @@ public class PickUpObject : MonoBehaviour
     public GameObject Ruin22;
     public GameObject Ruin23;
     public GameObject Ruin24;
+    public Button Button1;
+    public Button Button2;
+    public Button Button3;
+    public Button Button4;
+    public Button Button5;
+    public Button Button6;
+    public Button Button7;
+    public Button Button8;
+    public Button Button9;
+    public Button Button10;
+    public Button Button11;
+    public Button Button12;
+    public Button Button13;
+    public Button Button14;
+    public Button Button15;
+    public Button Button16;
+    public Button Button17;
+    public Button Button18;
+    public Button Button19;
+    public Button Button20;
+    public Button Button21;
+    public Button Button22;
+    public Button Button23;
+    public Button Button24;
 
     public TextMeshProUGUI woodCounter;
     public TextMeshProUGUI woodCounter1;
@@ -69,21 +94,21 @@ public class PickUpObject : MonoBehaviour
     {
         if (collider.transform.tag == "Wood")
         {
-            wood++;
+            wood += 9;
             woodCounter.text = wood.ToString();
             woodCounter1.text = wood.ToString();
             Destroy(collider.gameObject);
         }
         if (collider.transform.tag == "Stone")
         {
-            stone++;
+            stone += 9;
             stoneCounter.text = stone.ToString();
             stoneCounter1.text = stone.ToString();
             Destroy(collider.gameObject);
         }
         if (collider.transform.tag == "Metal")
         {
-            metal++;
+            metal += 9;
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Destroy(collider.gameObject);
@@ -103,7 +128,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building1.SetActive(true);
             Ruin1.SetActive(false);
-
+            Button1.interactable = false;
         }
         else
         {
@@ -124,6 +149,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building2.SetActive(true);
             Ruin2.SetActive(false);
+            Button2.interactable = false;
         }
 
         else
@@ -145,6 +171,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building3.SetActive(true);
             Ruin3.SetActive(false);
+            Button3.interactable = false;
         }
 
         else
@@ -166,6 +193,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building4.SetActive(true);
             Ruin4.SetActive(false);
+            Button4.interactable = false;
         }
 
         else
@@ -187,6 +215,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building5.SetActive(true);
             Ruin5.SetActive(false);
+            Button5.interactable = false;
         }
 
         else
@@ -208,6 +237,7 @@ public class PickUpObject : MonoBehaviour
             stoneCounter1.text = stone.ToString();
             Building6.SetActive(true);
             Ruin6.SetActive(false);
+            Button6.interactable = false;
         }
 
         else
@@ -229,6 +259,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building7.SetActive(true);
             Ruin7.SetActive(false);
+            Button7.interactable = false;
         }
 
         else
@@ -249,6 +280,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building8.SetActive(true);
+            Button8.interactable = false;
         }
 
         else
@@ -270,6 +302,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building9.SetActive(true);
             Ruin9.SetActive(false);
+            Button9.interactable = false;
         }
 
         else
@@ -291,6 +324,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building10.SetActive(true);
             Ruin10.SetActive(false);
+            Button10.interactable = false;
         }
 
         else
@@ -312,6 +346,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building11.SetActive(true);
             Ruin11.SetActive(false);
+            Button11.interactable = false;
         }
 
         else
@@ -333,6 +368,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building12.SetActive(true);
             Ruin12.SetActive(false);
+            Button12.interactable = false;
         }
 
         else
@@ -354,6 +390,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building13.SetActive(true);
             Ruin13.SetActive(false);
+            Button13.interactable = false;
         }
 
         else
@@ -375,6 +412,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building14.SetActive(true);
             Ruin14.SetActive(false);
+            Button14.interactable = false;
         }
 
         else
@@ -396,6 +434,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building15.SetActive(true);
             Ruin15.SetActive(false);
+            Button15.interactable = false;
         }
 
         else
@@ -417,6 +456,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building16.SetActive(true);
             Ruin16.SetActive(false);
+            Button16.interactable = false;
         }
 
         else
@@ -438,6 +478,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building17.SetActive(true);
             Ruin17.SetActive(false);
+            Button17.interactable = false;
         }
 
         else
@@ -459,6 +500,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building18.SetActive(true);
             Ruin18.SetActive(false);
+            Button18.interactable = false;
         }
 
         else
@@ -480,6 +522,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building19.SetActive(true);
             Ruin19.SetActive(false);
+            Button19.interactable = false;
         }
 
         else
@@ -501,6 +544,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building20.SetActive(true);
             Ruin20.SetActive(false);
+            Button20.interactable = false;
         }
 
         else
@@ -522,6 +566,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building21.SetActive(true);
             Ruin21.SetActive(false);
+            Button21.interactable = false;
         }
 
         else
@@ -543,6 +588,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building22.SetActive(true);
             Ruin22.SetActive(false);
+            Button22.interactable = false;
         }
 
         else
@@ -564,6 +610,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building23.SetActive(true);
             Ruin23.SetActive(false);
+            Button23.interactable = false;
         }
 
         else
@@ -585,6 +632,7 @@ public class PickUpObject : MonoBehaviour
             metalCounter1.text = metal.ToString();
             Building24.SetActive(true);
             Ruin24.SetActive(false);
+            Button24.interactable = false;
         }
 
         else
