@@ -10,7 +10,6 @@ public class MainMenu: MonoBehaviour
     public GameObject Options;
     public GameObject Credits;
 
-	public SettingsMenu Settings;
 	public PlayerMovement PlayerLocation;
 
 	private Scene Game;
@@ -21,15 +20,13 @@ public class MainMenu: MonoBehaviour
 		//to-do: Disable this button if theres no save game found
 		//Settings.LoadSettingsData();
 		//PlayerLocation.LoadLocationData();
-		//Game = GameObject.Find("Options").GetComponent<Scene>();
-		//Game.LoadSettingsData();
+		//Game = GameObject.Find("Game").GetComponent<Options>();
 		Debug.Log("Cgame");
 	}
 
     public void StartNewGame()
     {  
         SceneManager.LoadScene("Game");
-		Settings.LoadSettingsData();
 		//to-do: Add a popup that asks if you are sure about starting a new game & reset/delete the old savegame if you press yes
 	}
 

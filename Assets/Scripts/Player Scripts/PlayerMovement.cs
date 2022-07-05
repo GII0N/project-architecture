@@ -63,14 +63,14 @@ public class PlayerMovement : MonoBehaviour
 		x = PlayerPrefs.GetFloat("x");
 		y = PlayerPrefs.GetFloat("y");
 		z = PlayerPrefs.GetFloat("z");
-		Vector3 posVec = new Vector3(x, y, z);
+		Vector3 posVec = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
 		player.transform.position = posVec;
 	}
 
 	public void SaveLocationData()
 	{
-		PlayerPrefs.SetFloat("x", x);
-		PlayerPrefs.SetFloat("y", y);
-		PlayerPrefs.SetFloat("z", z);
+		PlayerPrefs.SetFloat("x", player.transform.position.x);
+		PlayerPrefs.SetFloat("y", player.transform.position.y);
+		PlayerPrefs.SetFloat("z", player.transform.position.z);
 	}
 }

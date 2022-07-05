@@ -26,10 +26,7 @@ public class SaveMenu : MonoBehaviour
 		Savemenu.SetActive(false);
 	}
 
-	public void NewGame()
-	{
 
-	}
 
 	public void Savegame()
 	{
@@ -38,7 +35,7 @@ public class SaveMenu : MonoBehaviour
 		
 	public void Loadgame()
 	{
-
+		
 		playerlocation.LoadLocationData();
 	}
 }
