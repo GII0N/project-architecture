@@ -11,6 +11,10 @@ public class PauseMenu : MonoBehaviour
 	public GameObject ExitMenu;
 	public GameObject SettingsMenu;
 	public GameObject SaveMenu;
+	public GameObject ResumeGameButton;
+	public GameObject OptionsButton;
+	public GameObject SaveButton;
+	public GameObject QuitButton;
 	public float progress = 0;
 	public Slider ProgressSlider;
 	public SettingsMenu settings;
@@ -88,6 +92,19 @@ public class PauseMenu : MonoBehaviour
 	public void OpenSaveMenu()
 	{
 		SaveMenu.SetActive(true);
+			ResumeGameButton.SetActive(false);
+			OptionsButton.SetActive(false);
+			SaveButton.SetActive(false);
+			QuitButton.SetActive(false);
+	}
+
+	public void CloseSaveMenu()
+	{
+		SaveMenu.SetActive(false);
+			ResumeGameButton.SetActive(true);
+			OptionsButton.SetActive(true);
+			SaveButton.SetActive(true);
+			QuitButton.SetActive(true);
 	}
 
 	public void UpdateProgress()
