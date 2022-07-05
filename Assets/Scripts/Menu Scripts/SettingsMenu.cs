@@ -57,13 +57,30 @@ public class SettingsMenu : MonoBehaviour
 		SaveSettingsData();
 
 		CrossHair.SetActive(activecrosshair);
+
+		if (Fullscreen == false)
+		{
+			Screen.fullScreenMode = FullScreenMode.Windowed;
+		}
+		else
+		{
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+		}
 	}
 
 	public void CloseMenu()
 	{
 		Settingsmenu.SetActive(false);
 		SaveSettingsData();
-
+		
+		if(Fullscreen == false)
+		{
+			Screen.fullScreenMode = FullScreenMode.Windowed;
+		}
+		else
+		{
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+		}
 	}
 
 	public void Crosshair()

@@ -33,12 +33,30 @@ public class MainSettingsMenu : MonoBehaviour
 	void Start()
     {
 		LoadSettingsData();
-    }
+		
+		if (Fullscreen == false)
+		{
+			Screen.fullScreenMode = FullScreenMode.Windowed;
+		}
+		else
+		{
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+		}
+	}
 
     // Update is called once per frame
     void Update()
     {
 		SaveSettingsData();
+
+		if (Fullscreen == false)
+		{
+			Screen.fullScreenMode = FullScreenMode.Windowed;
+		}
+		else
+		{
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+		}
 	}
 
 	public void ToggleFullscreen()
@@ -47,10 +65,12 @@ public class MainSettingsMenu : MonoBehaviour
 		if (Fullscreen == true)
 		{
 			Fullscreen = false;
+			Screen.fullScreenMode = FullScreenMode.Windowed;
 		}
 		else
 		{
 			Fullscreen = true;
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
 		}
 
 	}

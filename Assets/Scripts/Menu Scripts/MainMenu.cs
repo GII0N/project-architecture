@@ -23,6 +23,7 @@ public class MainMenu: MonoBehaviour
 		//PlayerLocation.LoadLocationData();
 		//Game = GameObject.Find("Options").GetComponent<Scene>();
 		//Game.LoadSettingsData();
+		Debug.Log("Cgame");
 	}
 
     public void StartNewGame()
