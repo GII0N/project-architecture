@@ -11,6 +11,7 @@ public class PickUpObject : MonoBehaviour
     public int metal;
 
     public GameObject NotEnoughError;
+    public GameObject InvisibleObject;
     public GameObject Building1;
     public GameObject Building2;
     public GameObject Building3;
@@ -58,6 +59,9 @@ public class PickUpObject : MonoBehaviour
     public GameObject Ruin22;
     public GameObject Ruin23;
     public GameObject Ruin24;
+    public GameObject WinScreen;
+    public GameObject InGameHud;
+    public GameObject NPCMenu;
     public Button Button1;
     public Button Button2;
     public Button Button3;
@@ -640,5 +644,34 @@ public class PickUpObject : MonoBehaviour
             NotEnoughError.SetActive(true);
             //StartCoroutine(Wait(2));
         }
+    }
+
+    public void InvisibleObjectCheck()
+    {
+        if (Building1.active)
+        {
+            InvisibleObject.SetActive(true);
+        }
+    }
+
+    public void WinCheck()
+    {
+        if (InvisibleObject.active && Building1.active && Building2.active && Building3.active && Building4.active && Building5.active && Building6.active && Building7.active && Building8.active && Building9.active && Building10.active && Building11.active && Building12.active && Building13.active && Building14.active && Building15.active && Building16.active && Building17.active && Building18.active && Building19.active && Building20.active && Building21.active && Building22.active && Building23.active && Building24.active)
+        {
+            WinScreen.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+			InGameHud.SetActive(false);
+            NPCMenu.SetActive(false);
+        }
+    }
+
+    public void LookAround()
+    {
+        InvisibleObject.SetActive(false);
+        WinScreen.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+		InGameHud.SetActive(true);
     }
 }
