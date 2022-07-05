@@ -17214,7 +17214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'All unsaved progress will be lost.
+  m_Text: 'All progress will be lost.
 
     Quit to main menu?'
 --- !u!222 &1043853133
