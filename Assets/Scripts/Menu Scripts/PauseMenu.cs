@@ -92,7 +92,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void UpdateProgress()
 	{
-		progress++;
+		progress--;
 		ProgressSlider.value = progress;
 	}
 }
