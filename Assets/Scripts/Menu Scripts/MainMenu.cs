@@ -21,7 +21,7 @@ public class MainMenu: MonoBehaviour
 		//to-do: Disable this button if theres no save game found
 		//Settings.LoadSettingsData();
 		//PlayerLocation.LoadLocationData();
-		Game = GameObject.Find("Options").GetComponent<Scene>();
+		//Game = GameObject.Find("Options").GetComponent<Scene>();
 		//Game.LoadSettingsData();
 	}
 
