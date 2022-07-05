@@ -41,7 +41,6 @@ public class PickUpObject : MonoBehaviour
     public GameObject Ruin5;
     public GameObject Ruin6;
     public GameObject Ruin7;
-    public GameObject Ruin8;
     public GameObject Ruin9;
     public GameObject Ruin10;
     public GameObject Ruin11;
@@ -250,7 +249,6 @@ public class PickUpObject : MonoBehaviour
             metalCounter.text = metal.ToString();
             metalCounter1.text = metal.ToString();
             Building8.SetActive(true);
-            Ruin8.SetActive(false);
         }
 
         else

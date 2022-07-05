@@ -3,7 +3,61 @@ guid: 3ba1d7186fe7e954c8c34adcd3530999
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - NotEnoughError: {instanceID: 0}
+  - Building1: {instanceID: 0}
+  - Building2: {instanceID: 0}
+  - Building3: {instanceID: 0}
+  - Building4: {instanceID: 0}
+  - Building5: {instanceID: 0}
+  - Building6: {instanceID: 0}
+  - Building7: {instanceID: 0}
+  - Building8: {instanceID: 0}
+  - Building9: {instanceID: 0}
+  - Building10: {instanceID: 0}
+  - Building11: {instanceID: 0}
+  - Building12: {instanceID: 0}
+  - Building13: {instanceID: 0}
+  - Building14: {instanceID: 0}
+  - Building15: {instanceID: 0}
+  - Building16: {instanceID: 0}
+  - Building17: {instanceID: 0}
+  - Building18: {instanceID: 0}
+  - Building19: {instanceID: 0}
+  - Building20: {instanceID: 0}
+  - Building21: {instanceID: 0}
+  - Building22: {instanceID: 0}
+  - Building23: {instanceID: 0}
+  - Building24: {instanceID: 0}
+  - Ruin1: {instanceID: 0}
+  - Ruin2: {instanceID: 0}
+  - Ruin3: {instanceID: 0}
+  - Ruin4: {instanceID: 0}
+  - Ruin5: {instanceID: 0}
+  - Ruin6: {instanceID: 0}
+  - Ruin7: {instanceID: 0}
+  - Ruin9: {instanceID: 0}
+  - Ruin10: {instanceID: 0}
+  - Ruin11: {instanceID: 0}
+  - Ruin12: {instanceID: 0}
+  - Ruin13: {instanceID: 0}
+  - Ruin14: {instanceID: 0}
+  - Ruin15: {instanceID: 0}
+  - Ruin16: {instanceID: 0}
+  - Ruin17: {instanceID: 0}
+  - Ruin18: {instanceID: 0}
+  - Ruin19: {instanceID: 0}
+  - Ruin20: {instanceID: 0}
+  - Ruin21: {instanceID: 0}
+  - Ruin22: {instanceID: 0}
+  - Ruin23: {instanceID: 0}
+  - Ruin24: {instanceID: 0}
+  - woodCounter: {instanceID: 0}
+  - woodCounter1: {instanceID: 0}
+  - stoneCounter: {instanceID: 0}
+  - stoneCounter1: {instanceID: 0}
+  - metalCounter: {instanceID: 0}
+  - metalCounter1: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
