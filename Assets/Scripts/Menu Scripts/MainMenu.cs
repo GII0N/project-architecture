@@ -10,18 +10,15 @@ public class MainMenu: MonoBehaviour
     public GameObject Options;
     public GameObject Credits;
 
-	public PlayerMovement PlayerLocation;
+	public float Continue;
 
-	private Scene Game;
+	MainSettingsMenu settingsMenu;
 
-    public void ContinueGame()
+	public void ContinueGame()
     {
 		//to-do: Make a save file and load that in if you press continue game
 		//to-do: Disable this button if theres no save game found
-		//Settings.LoadSettingsData();
-		//PlayerLocation.LoadLocationData();
-		//Game = GameObject.Find("Game").GetComponent<Options>();
-		Debug.Log("Cgame");
+		
 	}
 
     public void StartNewGame()

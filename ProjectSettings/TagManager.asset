@@ -8,6 +8,7 @@ TagManager:
   - Stone
   - Metal
   - NPC
+  - MainMusic
   layers:
   - Default
   - TransparentFX

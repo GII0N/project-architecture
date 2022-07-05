@@ -7,6 +7,8 @@ public class SaveMenu : MonoBehaviour
 	public GameObject Savemenu;
 
 	public PlayerMovement playerlocation;
+
+	public float Continue;
 	
 
     // Start is called before the first frame update
@@ -31,6 +33,7 @@ public class SaveMenu : MonoBehaviour
 	public void Savegame()
 	{
 		playerlocation.SaveLocationData();
+		Continue = 1f;
 	}
 		
 	public void Loadgame()

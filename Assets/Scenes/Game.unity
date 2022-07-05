@@ -19036,6 +19036,7 @@ GameObject:
   - component: {fileID: 1186999994}
   - component: {fileID: 1186999996}
   - component: {fileID: 1186999995}
+  - component: {fileID: 1186999997}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -19216,6 +19217,14 @@ MonoBehaviour:
   npcText: {fileID: 1560893002}
   npcMenu: {fileID: 976499666}
   InGameHud: {fileID: 628371826}
+--- !u!81 &1186999997
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186999991}
+  m_Enabled: 1
 --- !u!1 &1192084215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 860df622451514046974e91487110d85, type: 3}
@@ -20593,6 +20602,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 864b3706367bc9245aac4a373708c02a, type: 3}
   m_PrefabInstance: {fileID: 1280387153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1280969996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280969998}
+  - component: {fileID: 1280969997}
+  m_Layer: 0
+  m_Name: audiocontroller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1280969997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280969996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9704b9d46f8eb00499fcf4fb64992c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicObject: {fileID: 0}
+  AudioVolumeSlider: {fileID: 1338695918}
+--- !u!4 &1280969998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280969996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1793.447, y: 839.85846, z: -392.82938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283139288
 GameObject:
   m_ObjectHideFlags: 0
@@ -23403,6 +23457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Savemenu: {fileID: 0}
   playerlocation: {fileID: 0}
+  Continue: 0
 --- !u!1 &1411054774
 GameObject:
   m_ObjectHideFlags: 0
@@ -26996,10 +27051,8 @@ MonoBehaviour:
   SceneLight: {fileID: 1775513534}
   BrigtnesSlider: {fileID: 669975384}
   SensitivitySlider: {fileID: 1136554693}
-  AudioVolumeSlider: {fileID: 1338695918}
   Fullscreen: 1
   activecrosshair: 1
-  MainNoise: {fileID: 0}
   CrosshairActive: {fileID: 929326289}
   FullscreenActive: {fileID: 1097561596}
 --- !u!114 &1656139333

@@ -11,7 +11,6 @@ public class MainSettingsMenu : MonoBehaviour
 
 	public Toggle FullscreenActive;
 
-	public AudioSource MainNoise;
 
 	int boolToInt(bool val)
 	{
@@ -29,6 +28,10 @@ public class MainSettingsMenu : MonoBehaviour
 			return false;
 	}
 
+	private void Awake()
+	{
+		LoadSettingsData();
+	}
 	// Start is called before the first frame update
 	void Start()
     {
@@ -75,14 +78,9 @@ public class MainSettingsMenu : MonoBehaviour
 
 	}
 
-	public void ChangeAudioVolume()
-	{
-		MainNoise.volume = AudioVolumeSlider.value;
-	}
 
 	public void SaveSettingsData()
 	{
-		PlayerPrefs.SetFloat("Musicvolume", AudioVolumeSlider.value);
 		PlayerPrefs.SetInt("Fullscreen", boolToInt(Fullscreen));
 
 		FullscreenActive.isOn = Fullscreen;
@@ -91,7 +89,6 @@ public class MainSettingsMenu : MonoBehaviour
 
 	public void LoadSettingsData()
 	{
-		AudioVolumeSlider.value = PlayerPrefs.GetFloat("Musicvolume");
 		Fullscreen = intToBool(PlayerPrefs.GetInt("Fullscreen"));
 
 		FullscreenActive.isOn = Fullscreen;
