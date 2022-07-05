@@ -39,6 +39,10 @@ public class SettingsMenu : MonoBehaviour
 			return false;
 	}
 
+	void Awake()
+	{
+		DontDestroyOnLoad(this);
+	}
 	public void Start()
 	{
 		ChangeAudioVolume();
@@ -82,10 +86,12 @@ public class SettingsMenu : MonoBehaviour
 		if (Fullscreen == true)
 		{
 			Fullscreen = false;
+			Screen.fullScreenMode = FullScreenMode.Windowed;
 		}
 		else
 		{
 			Fullscreen = true;
+			Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
 		}
 
 	}

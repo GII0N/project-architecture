@@ -22,8 +22,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    // Update is called once per frame
-    private void Update()
+	void Awake()
+	{
+		DontDestroyOnLoad(this);
+	}
+
+	// Update is called once per frame
+	private void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
